@@ -18,6 +18,7 @@ export default defineConfig(() => {
       viteStaticCopy({
         // Copy JavaScript worker bundle on purpose in order to demostrate how to config
         // worker file urls in AcApDocManager.createInstance
+        silent: true,
         targets: [
           {
             src: './node_modules/@mlightcad/data-model/dist/dxf-parser-worker.js',

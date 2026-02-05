@@ -18,6 +18,7 @@ export default defineConfig(({ command, mode }) => {
     vue(),
     svgLoader(),
     viteStaticCopy({
+      silent: true,
       targets: [
         {
           src: './node_modules/@mlightcad/data-model/dist/dxf-parser-worker.js',

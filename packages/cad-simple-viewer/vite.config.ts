@@ -15,6 +15,7 @@ export default defineConfig({
   plugins: [
     peerDepsExternal() as PluginOption,
     viteStaticCopy({
+      silent: true,
       targets: [
         {
           src: './node_modules/@mlightcad/libredwg-converter/dist/libredwg-parser-worker.js',
